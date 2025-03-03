@@ -19,12 +19,12 @@ print(type(is_rich))  # <class 'bool'>
 
 # My name is Jevan
 
-
+name = "Jacob"
 print("My name is " + name)
 
 
-# My age is 23
-
+# My age is 23.45
+age = "23.45"
 print("My age is " + str(age))
 
 # fstring
