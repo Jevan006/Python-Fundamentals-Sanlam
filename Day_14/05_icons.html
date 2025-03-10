@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      body {
+        /* Centering */
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        margin: 0px;
+
+        /* CSS HSL */
+        --yale-blue: hsla(209, 77%, 23%, 1);
+        --lemon-chiffon: hsla(48, 83%, 89%, 1);
+        --carolina-blue: hsla(201, 51%, 69%, 1);
+        --taupe-gray: hsla(319, 7%, 54%, 1);
+      }
+
+      .hobby-container {
+        font-size: 32px;
+      }
+      /* Task - Each icon in different color, text black*/
+
+      .hobby-list {
+        color: black;
+        list-style: none;
+        padding: 0px;
+      }
+      .fa-music {
+        color: orange;
+      }
+
+      .fa-cube {
+        color: rgb(230, 38, 0);
+      }
+
+      .fa-futbol {
+        color: rgb(0, 0, 0);
+      }
+
+      .fa-chess {
+        color: rgb(0, 128, 135);
+      }
+
+      .fa-puzzle-piece {
+        color: rgb(56, 30, 30);
+      }
+
+      .fa-gamepad {
+        color: rgb(148, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hobby-container">
+      <h3 class="hobby-heading">Hobbies</h3>
+      <ul class="hobby-list">
+        <li>Music <i class="fa-solid fa-music"></i></li>
+        <li>3D Printing <i class="fa-solid fa-cube"></i></li>
+        <li>Soccer <i class="fa-solid fa-futbol"></i></li>
+        <li>Chess <i class="fa-solid fa-chess"></i></li>
+        <li>Sudoku <i class="fa-solid fa-puzzle-piece"></i></li>
+        <li>Cosplaying <i class="fa-solid fa-gamepad"></i></li>
+      </ul>
+    </div>
+  </body>
+</html>
