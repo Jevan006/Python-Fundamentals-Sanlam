@@ -1,0 +1,13 @@
+Exercise 6 Find the domestic and international sales for each movie ```sql
+SELECT * FROM movies inner join boxoffice on movies.id = Boxoffice.movie_id ```
+Show the sales numbers for each movie that did better internationally rather
+than domestically ```sql SELECT title, domestic_sales, international_sales FROM
+movies JOIN boxoffice ON movies.id = boxoffice.movie_id WHERE
+international_sales > domestic_sales; ``` List all the movies by their ratings
+in descending order SELECT * FROM movies JOIN boxoffice ON movies.id =
+boxoffice.movie_id Order by rating desc Exercise 7 Find the list of all
+buildings that have employees ✓ ```sql SELECT DISTINCT building FROM employees;
+``` Find the list of all buildings and their capacity ```sql SELECT * FROM
+buildings ``` List all buildings and the distinct employee roles in each
+building (including empty buildings) ```sql SELECT DISTINCT building_name, role
+FROM buildings LEFT JOIN employees ON building = building_name; ```
