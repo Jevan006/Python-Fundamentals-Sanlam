@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .form-element {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    1. form
+    2. button type="submit"
+    -->
+    <!--
+    Validation
+    1. No Junk data
+    2. UX ⬆️
+    3. required, min, max, minlength, maxlength, email
+    -->
+    <form class="form-container">
+      <div class="form-element">
+        <label for="name">Name</label>
+        <input type="text" placeholder="John" id="name" required />
+      </div>
+      <div class="form-element">
+        <label for="email">Email</label>
+        <input type="email" placeholder="John@gamil.com" id="email" required />
+      </div>
+      <div class="form-element">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Secret" id="password" />
+      </div>
+      <div class="form-element">
+        <label for="age">Age</label>
+        <input
+          type="number"
+          placeholder="20"
+          id="age"
+          required
+          min="18"
+          max="60"
+          disabled
+        />
+      </div>
+
+      <div class="form-element">
+        <p>Gender</p>
+        <label><input type="radio" name="gender" /> Male</label>
+        <label><input type="radio" name="gender" /> Female</label>
+      </div>
+
+      <div class="form-element">
+        <p>Hobbies</p>
+        <label><input type="checkbox" name="hobby" /> Chess</label>
+        <label
+          ><input type="checkbox" name="hobby" disabled checked /> Karate</label
+        >
+        <label><input type="checkbox" name="hobby" /> Badminton</label>
+        <label><input type="checkbox" name="hobby" /> Anime</label>
+      </div>
+
+      <div class="form-element">
+        <label for="city">City</label>
+        <select id="city">
+          <option value="CT">Cape Town</option>
+          <option value="DL">Delhi</option>
+          <option value="BKP">Brakpan</option>
+          <option value="AKB">Akihabara</option>
+        </select>
+      </div>
+
+      <div class="form-element">
+        <label for="comment">Comment</label>
+        <textarea col="10" rows="5" id="comment"></textarea>
+      </div>
+
+      <div class="form-element">
+        <label>DOB <input type="date" /></label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <!-- <label
+      >Password:
+      <input type="password" placeholder="Secret" />
+    </label> -->
+  </body>
+</html>
